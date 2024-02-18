@@ -19,6 +19,7 @@ import { ProcessComponent } from './views/process/process.component';
 import { ResultsComponent } from './views/results/results.component';
 import { SliderComponent } from './views/slider/slider.component';
 import { SwiperModule } from 'swiper/angular';
+import { PostComponent } from './views/post/post.component';
 
 
 
@@ -39,7 +40,8 @@ import { SwiperModule } from 'swiper/angular';
     MakeComponent,
     ProcessComponent,
     ResultsComponent,
-    SliderComponent
+    SliderComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
