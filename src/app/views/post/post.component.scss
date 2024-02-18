@@ -65,12 +65,16 @@
 
     .news {
       position: relative;
+      .devel{
+        padding-bottom: 20px;
+        border-bottom: 1px solid black;
+      }
 
       &:before {
         content: '';
         border-left: 1px solid $color-border;
         //height: 690px;
-        height: 1076px;
+        height: 1060px;
         position: absolute;
         left: -181px;
         top: 0;
