@@ -1,0 +1,134 @@
+@import "root";
+@import "fonts";
+@import "modal";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Syne, sans-serif;
+  font-weight: 500;
+  background: $background-body;
+}
+app-layout{
+  display: flex;
+  flex-direction: column;
+}
+app-training,
+app-courses,
+app-slider,
+app-secret-guest,
+app-subscription,
+app-make{
+  min-height: calc(100vh - 720px);
+}
+
+
+.container {
+  margin: 30px auto;
+  padding: 30px 65px 50px 64px;
+  max-width: 1300px;
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.button {
+  background: $background-btn;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.button_main {
+  font-family: Syne, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 14px 21px;
+  border: none;
+  transition: 0.3s linear;
+  span {
+    display: inline-block;
+    padding-left: 14px;
+  }
+}
+
+.button:hover {
+  background: rgba(68, 68, 68, 1);
+}
+
+.link-btn {
+  background: transparent;
+}
+
+.link-btn:hover {
+  background: transparent;
+}
+.section_title{
+  h2 {
+    margin: 0;
+    padding: 8px 0 23px 0;
+    font-family: Syne,serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  span {
+    font-family: PlusJakartaSans-Regular, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: $color-text;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0;
+    padding-bottom: 39px;
+    width: 370px;
+    font-family: PlusJakartaSans-Regular, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-text;
+  }
+}
+
+.social {
+  display: flex;
+  grid-gap: 15px;
+  padding-left: 31px;
+  position: relative;
+
+  a {
+    font-size: 0;
+  }
+
+  .social_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid $color-border;
+    transition: 0.3s linear;
+
+    a svg {
+      width: 21px;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 1);
+    }
+
+    &:hover a svg path {
+      fill: white;
+    }
+  }
+}
+
+
