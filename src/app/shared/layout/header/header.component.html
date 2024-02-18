@@ -17,7 +17,7 @@
       <li class="nav_item"><a href="#services" (click)="routs('services')">Наши услуги</a></li>
       <li class="nav_item"><a href="#work" (click)="routs('work')">Как мы это делаем</a></li>
       <li class="nav_item"><a href="#result" (click)="routs('result')">Результаты</a></li>
-      <li class="nav_item"><a href="#">Инфографика</a></li>
+      <li class="nav_item"><a href="#post" (click)="routs('post')">Инфографика</a></li>
     </ul>
     <div class="social">
 <!--      <div class="instagram social_item">-->
@@ -50,7 +50,7 @@
 </header>
 
 <section class="back">
-  <a href="#body">
+  <a (click)="scrollT()">
     <svg class="back_svg" width="15" height="15" viewBox="0 0 15 15" fill="none"
          xmlns="http://www.w3.org/2000/svg">
       <path d="M3.19343 11.8065C3.01444 11.6275 2.99953 11.3466 3.14869 11.1506L3.19343 11.0994L10.2644 4.0284C10.4597 3.83314 10.7763 3.83314 10.9715 4.0284C11.1505 4.20739 11.1654 4.48832 11.0163 4.6843L10.9715 4.7355L3.90053 11.8065C3.70527 12.0017 3.38869 12.0017 3.19343 11.8065Z"

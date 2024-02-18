@@ -15,4 +15,8 @@ export class HeaderComponent implements OnInit {
   routs(fragment:string) {
     this.router.navigate(['/'], {fragment: fragment})
   }
+
+  scrollT(){
+    window.scrollTo(0, 0)
+  }
 }
