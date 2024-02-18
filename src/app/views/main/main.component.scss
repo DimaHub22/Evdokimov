@@ -1,0 +1,79 @@
+@import "../../../assets/styles/root";
+
+.main {
+  padding-top: 181px;
+  position: relative;
+
+  .main_title {
+    font-family: Syne, serif;
+    margin: 50px auto;
+    max-width: 795px;
+    text-align: center;
+    font-size: 52px;
+    line-height: 73px;
+    color: $color-title;
+    span {
+      display: block;
+    }
+  }
+
+  .icon_main {
+    position: absolute;
+    top: 100px;
+    right: 215px;
+    width: 80px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .image_main_small {
+    width: 370px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .main_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .main_content_item {
+      padding-top: 45px;
+
+      .main_content_text {
+        margin: 0;
+        padding-bottom: 39px;
+        max-width: 470px;
+        font-family: PlusJakartaSans-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-text;
+      }
+
+    }
+
+    .image_main_big {
+      max-width: 570px;
+      height: 370px;
+      border-radius: 12px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+    }
+
+    .icon_main_bottom {
+      position: absolute;
+      left: -24px;
+      bottom: -20px;
+    }
+  }
+}

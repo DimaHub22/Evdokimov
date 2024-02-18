@@ -1,0 +1,90 @@
+@import "../../../assets/styles/root";
+
+.process {
+  padding: 69px 0 81px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  //grid-gap: 289px;
+  border-bottom: 1px solid $color-border;
+
+  .process_image {
+    width: 470px;
+    height: 552px;
+    border-radius: 15px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+  }
+
+  .process_points {
+    position: relative;
+    padding-top: 15px;
+    &:before {
+      content: '';
+      border-left: 1px solid $color-border;
+      height: 551px;
+      position: absolute;
+      left: -168px;
+      top: 0;
+    }
+
+    .process_point_item {
+      max-width: 428px;
+      position: relative;
+      transition: 0.5s linear;
+
+      h2 {
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 400;
+        color: $color-title;
+        font-size: 30px;
+        line-height: 42px;
+      }
+      p {
+        margin: 0;
+        padding-top: 13px;
+        padding-bottom: 0px;
+        font-family: PlusJakartaSans-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-text;
+      }
+      .point {
+        position: absolute;
+        top: 8px;
+        left: -129px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid rgba(221, 221, 221, 1);
+        span {
+          font-family: Syne, sans-serif;
+          font-size: 20px;
+          color: rgba(170, 170, 170, 1);
+          transition: 0.5s linear;
+        }
+      }
+      &:hover .point span {
+        color: $color-text;
+      }
+      &:hover .point {
+        border: 1px solid $color-text;
+      }
+      &:not(:first-child) {
+        padding-top: 20px;
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-border;
+      }
+      &:not(:last-child) p {
+        padding-bottom: 25px;
+      }
+    }
+  }
+}

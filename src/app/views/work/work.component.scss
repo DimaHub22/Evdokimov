@@ -1,0 +1,57 @@
+@import "../../../assets/styles/root";
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 75px 0 81px 0;
+  border-bottom: 1px solid $color-border;
+  .work_description {
+    width: 476px;
+    height: 234px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    direction: rtl;
+    p {
+      margin: 0;
+      padding-bottom: 25px;
+      padding-left: 18px;
+      color: $color-text;
+      font-family: PlusJakartaSans-Regular, sans-serif;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: end;
+    }
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+    &::-webkit-scrollbar-track {
+      background: rgba(221, 221, 221, 1);
+      border: 1px solid transparent;
+      background-clip: content-box;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: black;
+      border: 1px solid rgb(0, 0, 0);
+    }
+    &::-webkit-scrollbar-button:start:hover {
+      background: green;
+    }
+  }
+  .work_title {
+    width: 569px;
+    position: relative;
+    h2 {
+      padding-bottom: 53px;
+      line-height: 50px;
+    }
+    &:before {
+      content: '';
+      border-left: 1px solid $color-border;
+      height: 249px;
+      position: absolute;
+      left: -130px;
+    }
+  }
+}

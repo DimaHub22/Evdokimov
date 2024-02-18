@@ -1,0 +1,143 @@
+@import "../../../assets/styles/root";
+
+.featured_work {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 68px;
+  padding-bottom: 76px;
+  border-bottom: 1px solid $color-border;
+  border-top: 1px solid black;
+  margin-top: 50px;
+
+  .featured_work_description{
+    h2 {
+      width: 321px;
+      margin: 0;
+      padding: 8px 0 23px 0;
+      font-family: Syne, serif;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 40px;
+    }
+  }
+
+
+  .featured_description{
+
+    .featured_first {
+      display: flex;
+      grid-gap: 220px;
+
+      .branding{
+        &:before {
+          content: '';
+          border-bottom: 1px solid $color-border;
+          width: 250px;
+          position: absolute;
+          bottom: -45px;
+          left: -88px;
+        }
+        &:hover .icon_featured {
+          transform: scale(1.5);
+        }
+      }
+      .ui-desing{
+        &:after {
+          content: '';
+          border-left: 1px solid $color-border;
+          height: 150px;
+          position: absolute;
+          bottom: 0px;
+          left: -154px;
+        }
+        &:hover .icon_featured {
+          transform: scale(1.5);
+        }
+
+      }
+
+    }
+    .featured_second {
+      padding-top: 85px;
+      display: flex;
+      grid-gap: 220px;
+      .marketing{
+        &:after {
+          content: '';
+          border-left: 1px solid $color-border;
+          height: 150px;
+          position: absolute;
+          bottom: 0px;
+          right: -67px;
+        }
+        &:hover .icon_featured {
+          transform: scale(1.5);
+        }
+      }
+
+      .content{
+        &:after {
+          content: '';
+          border-top: 1px solid $color-border;
+          width: 250px;
+          position: absolute;
+          top: -45px;
+          left: -88px;
+        }
+        &:hover .icon_featured {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}
+
+.featured_item {
+  width: 164px;
+  position: relative;
+
+  h2 {
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 42px;
+    color: $color-title;
+  }
+  p {
+    margin: 0;
+    padding-bottom: 25px;
+    font-family: PlusJakartaSans-Regular, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-text;
+  }
+  a {
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    &:after {
+      content: '';
+      background-image: url("../../../assets/images/icons/arrow.svg");
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: -1px;
+      right: -14px;
+    }
+  }
+  .icon_featured {
+    position: absolute;
+    top: 8px;
+    left: -89px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    img {
+      width: 100%;
+    }
+  }
+}

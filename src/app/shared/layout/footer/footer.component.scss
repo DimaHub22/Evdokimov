@@ -1,0 +1,206 @@
+@import "../../../../assets/styles/root";
+
+.footer {
+  padding-top: 80px;
+  border-top: 1px solid black;
+
+  .footer_item {
+    padding-bottom: 66px;
+    border-bottom: 1px solid $color-border;
+    display: flex;
+    justify-content: space-between;
+
+    .footer_logo{
+      .logo-end{
+        display: flex;
+        align-items: center;
+        grid-gap: 10px;
+        .logo {
+          width: 40px;
+          height: 40px;
+          img {
+            width: 100%;
+          }
+        }
+
+        .logo-title {
+          width: 160px;
+          line-height: 20px;
+        }
+        .logo-footer-text{
+          font-size: 14px;
+          line-height: 17px;
+          width: 200px;
+          span{
+            display: block;
+          }
+        }
+      }
+
+      .footer_text {
+        width: 370px;
+        .footer_description {
+          font-family: PlusJakartaSans-Regular, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          color: $color-text-footer;
+          font-style: italic;
+        }
+        .footer_data {
+          font-family: PlusJakartaSans-Regular, sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 2px;
+          color: $color-text-footer;
+        }
+      }
+    }
+
+    .footer_info {
+      display: flex;
+      position: relative;
+      grid-gap: 85px;
+      &:before {
+        content: "";
+        border-left: 1px solid $color-border;
+        position: absolute;
+        height: 100%;
+        left: -70px;
+      }
+      .info_title {
+        font-size: 18px;
+        margin-top: 0;
+      }
+      .useful {
+        //padding-right: 68px;
+        ul {
+          list-style-type: square;
+          padding-left: 17px;
+          li {
+            color: $color-text-footer;
+            padding-bottom: 20px;
+            a {
+              text-transform: uppercase;
+              text-decoration: none;
+              color: $color-text-footer;
+            }
+          }
+        }
+      }
+      .info_contact {
+        //padding-right: 35px;
+        ul {
+          padding-left: 0;
+          width: 200px;
+          li {
+            padding-bottom: 20px;
+            list-style: none;
+            font-family: Syne, serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $color-text-footer;
+            a {
+              text-decoration: none;
+              font-family: Syne, serif;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22px;
+              color: $color-text-footer;
+            }
+          }
+        }
+      }
+      .letter {
+        p {
+          font-family: Syne, serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          color: $color-text-footer;
+        }
+        input {
+          outline: none;
+          -webkit-appearance: none;
+          -webkit-border-radius: 0;
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid $color-border;
+          color: $color-text-footer;
+          font-family: Syne, serif;
+          font-size: 14px;
+          padding-bottom: 5px;
+          &::placeholder {
+            font-family: Syne, serif;
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: 400;
+          }
+        }
+        .send_btn {
+          padding-top: 21px;
+          img {
+            vertical-align: text-top;
+          }
+          a {
+            text-decoration: none;
+            font-family: Syne, serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 2px;
+            color: $background-btn;
+
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .footer_end {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer_social{
+      .social {
+        padding-left: 0;
+        position: inherit;
+        &:before {
+          content: '';
+          border-left: transparent;
+          height: 0;
+        }
+      }
+    }
+
+    .footer_privacy {
+      display: flex;
+      grid-gap: 40px;
+      .privacy_text {
+        font-family: PlusJakartaSans-Regular, serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $color-text-footer;
+      }
+      .terms {
+        position: relative;
+        &:before {
+          content: "";
+          border-left: 1px solid $color-border;
+          position: absolute;
+          height: 18px;
+          top: 0;
+          left: -19px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+@import "../../../../assets/styles/root";
+
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-border;
+    padding-bottom: 30px;
+
+    .logo-item {
+      a{
+        display: flex;
+        align-items: center;
+        grid-gap: 15px;
+        text-decoration: none;
+        color: black;
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .logo-title {
+        width: 160px;
+        line-height: 20px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+
+      .nav {
+        display: flex;
+        grid-gap: 35px;
+        padding: 0 28px 0 0;
+        position: relative;
+
+        &:before {
+          content: '';
+          height: 25px;
+          border: 1px solid $color-border;
+          position: absolute;
+          right: 0;
+          top: -4px;
+        }
+
+        li {
+          list-style: none;
+        }
+
+        .nav_item {
+          a {
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+            color: rgba(68, 68, 68, 1);
+            border-bottom: 2px solid transparent;
+            transition: 0.3s linear;
+            text-transform: uppercase;
+
+            &:hover {
+              color: rgba(0, 0, 0, 1);
+              border-bottom: 2px solid $color-border;
+            }
+          }
+
+          span svg {
+            vertical-align: middle;
+          }
+        }
+      }
+
+    }
+
+    .burger {
+      display: none;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $color-border;
+
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  transition: 0.5s linear;
+  &:hover {
+    background: $color-text;
+  }
+  &:hover .back_svg path {
+    fill: white;
+  }
+  a {
+    text-decoration: none;
+    .back_svg {
+      transform: rotate(-45deg);
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "../../../assets/styles/root";
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 0 81px 0;
+  border-bottom: 1px solid $color-border;
+  position: relative;
+  flex-wrap: wrap;
+
+  .portfolio_description {
+    h2 {
+      width: 302px;
+    }
+
+    p {
+      width: 370px;
+    }
+  }
+
+  .portfolio_items {
+    padding-left: 65px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 41px;
+    border-left: 1px solid $color-border;
+    width: 670px;
+
+    .portfolio_item {
+      max-width: 670px;
+      height: 150px;
+      background: rgba(0, 0, 0, 1);
+      border-radius: 15px;
+      transition: 0.5s linear;
+      position: relative;
+      overflow: hidden;
+
+      .portfolio_item_image {
+        max-width: 670px;
+        height: 150px;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: 0.5s linear;
+
+        img {
+          width: 100%;
+        }
+      }
+      .portfolio_image {
+        height: 300px;
+      }
+
+
+      .portfolio_item_action {
+        padding: 28px 18px;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        transition: 1s linear;
+
+        p {
+          margin: 0;
+          font-family: Syne, serif;
+          font-size: 24px;
+          color: rgba(255, 255, 255, 1);
+          transition: 1s linear;
+        }
+
+        .portfolio_view {
+          color: black;
+          background: $background-body;
+
+          &:hover {
+            background: $background-body;
+          }
+        }
+        button {
+          padding: 8px 15px;
+          border: none;
+          border-radius: 3px;
+          cursor: pointer;
+          img {
+            margin-left: 14px;
+          }
+        }
+
+      }
+      .portfolio_action {
+        display: flex;
+
+        p {
+          transform: translateX(-100%);
+          animation: ani 1s forwards;
+        }
+
+        button {
+          transform: translateX(100%);
+          animation: ani2 1s forwards;
+        }
+      }
+    }
+    .portfolio_item_section {
+      height: 390px;
+    }
+
+
+
+
+
+  }
+  .icon_portfolio {
+    position: absolute;
+    left: -24px;
+    bottom: 76px;
+  }
+}
+
+
+
+@keyframes ani {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
