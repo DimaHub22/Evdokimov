@@ -5,9 +5,9 @@
       <h2>Какие перспективы развития Сочи?</h2>
     </div>
     <div class="post_description">
-      <p>В Сочи реализуют инвестиционные проекты почти на 480 млрд рублей. Сочи — хорошее место для инвестиций как для
+      <p>Сочи — хорошее место для инвестиций как для
         крупной компании, так и для начинающего коммерсанта.</p>
-      <button class="button_main button">К цыфрам
+      <button class="button_main button" (click)="isOpen=true">К цыфрам
         <span>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -28,9 +28,7 @@
       </div>
       <div class="branding_description branding_text">
         <p>ИНФОГРАФИКА</p>
-        <h2>Things to look for when
-          comparing branding
-          alternatives</h2>
+        <h2>В Сочи реализуют инвестиционные проекты почти на 480 млрд рублей.</h2>
       </div>
     </div>
     <div class="news">
@@ -57,3 +55,30 @@
     </div>
   </div>
 </section>
+
+
+<div class="modal" [class.modal-show]="isOpen">
+  <div class="modal-content" [class.modal-content-show]="isOpen">
+    <h2>Сочи</h2>
+    <div>
+      <ul>
+        <li>Турпоток в 2023 вырос на 6%.</li>
+        <li>Стремительный рост местных жителей.</li>
+        <li>егионы России отдыхают в Сочи и летом и зимой.</li>
+        <li>В Сочи в 2023 году зафиксировано более чем 1900 ресторанов и кафе.</li>
+        <li>42000 сотрудников зарегистрированы в сфере общепита.</li>
+        <li>Сочи в 2023 приняли почти 7.6 млн отдыхающих.</li>
+        <li>Средний чек отдыхающего в Сочи составляет от 6500 до 9000 в сутки.</li>
+        <li>Средний чек в ресторане составляет от 2500-4500 на одного гостя.</li>
+        <li>Перспективы только растут, а прогнозы восхищают.</li>
+      </ul>
+    </div>
+
+    <div class="close" (click)="isOpen = false">
+      <img src="assets/images/icons/close.svg" alt="">
+    </div>
+
+  </div>
+
+
+</div>
