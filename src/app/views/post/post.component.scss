@@ -69,7 +69,8 @@
       &:before {
         content: '';
         border-left: 1px solid $color-border;
-        height: 690px;
+        //height: 690px;
+        height: 1076px;
         position: absolute;
         left: -181px;
         top: 0;
@@ -100,10 +101,10 @@
       max-width: 424px;
 
       h2 {
-        width: 365px;;
+        width: 468px;
         margin: 0;
         font-family: Syne, serif;
-        font-size: 30px;
+        font-size: 26px;
         line-height: 36px;
         font-weight: 500;
         color: $color-title;
