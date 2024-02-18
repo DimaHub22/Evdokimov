@@ -1,0 +1,123 @@
+@import "../../../assets/styles/root";
+
+.post {
+  padding: 74px 0 73px 0;
+  //border-bottom: 1px solid $color-border;
+  .post_block_title {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    .post_title {
+      h2 {
+        width: 435px;
+      }
+    }
+
+    .post_description {
+      max-width: 470px;
+
+      p {
+        width: 100%;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .posts {
+    display: flex;
+    justify-content: space-between;
+
+    .brandings {
+      .branding_image {
+        max-width: 430px;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+        }
+      }
+
+      //.branding_text {
+      //  max-width: 424px;
+      //  h2 {
+      //    width: 328px;
+      //    margin: 0;
+      //    font-family: Syne, serif;
+      //    font-size: 30px;
+      //    line-height: 36px;
+      //    font-weight: 500;
+      //    color: $color-title;
+      //  }
+      //  p {
+      //    margin: 0;
+      //    padding: 10px 0;
+      //    font-family: PlusJakartaSans-Regular, sans-serif;
+      //    font-size: 13px;
+      //    line-height: 16px;
+      //    color: $color-subtitle-post;
+      //    letter-spacing: 2px;
+      //  }
+      //}
+    }
+
+    .news {
+      position: relative;
+
+      &:before {
+        content: '';
+        border-left: 1px solid $color-border;
+        height: 690px;
+        position: absolute;
+        left: -181px;
+        top: 0;
+      }
+
+      .design {
+        padding-bottom: 13px;
+        border-bottom: 1px solid $color-border;
+      }
+
+      .developer {
+        padding-top: 20px;
+      }
+
+      .news_images {
+        max-width: 470px;
+        height: 220px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .branding_text {
+      max-width: 424px;
+
+      h2 {
+        width: 328px;
+        margin: 0;
+        font-family: Syne, serif;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 500;
+        color: $color-title;
+      }
+
+      p {
+        margin: 0;
+        padding: 10px 0;
+        font-family: PlusJakartaSans-Regular, sans-serif;
+        font-size: 13px;
+        line-height: 16px;
+        color: $color-subtitle-post;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

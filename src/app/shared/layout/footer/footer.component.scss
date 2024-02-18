@@ -112,6 +112,7 @@
             }
           }
         }
+
       }
       .letter {
         p {
@@ -162,23 +163,24 @@
 
 
 
+
   .footer_end {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .footer_social{
-      .social {
-        padding-left: 0;
-        position: inherit;
-        &:before {
-          content: '';
-          border-left: transparent;
-          height: 0;
-        }
-      }
-    }
+    //.footer_social{
+    //  .social {
+    //    padding-left: 0;
+    //    position: inherit;
+    //    &:before {
+    //      content: '';
+    //      border-left: transparent;
+    //      height: 0;
+    //    }
+    //  }
+    //}
 
     .footer_privacy {
       display: flex;
@@ -201,6 +203,23 @@
           left: -19px;
         }
       }
+    }
+  }
+}
+
+.footer_social{
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 57px;
+  bottom: 118px;
+  .social {
+    padding-left: 0;
+    position: inherit;
+    &:before {
+      content: '';
+      border-left: transparent;
+      height: 0;
     }
   }
 }
