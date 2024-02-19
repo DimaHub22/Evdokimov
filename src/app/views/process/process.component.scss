@@ -1,4 +1,5 @@
 @import "../../../assets/styles/root";
+@import "../../../assets/styles/adaptive";
 
 .process {
   padding: 69px 0 81px 0;
@@ -9,7 +10,7 @@
   border-bottom: 1px solid $color-border;
 
   .process_image {
-    width: 470px;
+    max-width: 470px;
     height: 552px;
     border-radius: 15px;
     overflow: hidden;
@@ -88,3 +89,93 @@
     }
   }
 }
+@media screen and (max-width: 1435px){
+  .process{
+    .process_points{
+      &:before{
+        left: -153px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1399px) {
+  .process{
+    .process_points{
+      &:before{
+        left: -129px;
+      }
+      .process_point_item {
+        .point {
+          left: -92px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1345px){
+  .process{
+    .process_points{
+      &:before{
+        left: -113px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px){
+  .process{
+    .process_image{
+      height: auto;
+      font-size: 0;
+    }
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 60px;
+    .process_points{
+      &:before{
+       border-left: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px){
+  .process{
+    .process_points{
+      .process_point_item {
+        .point {
+          display: none;
+        }
+      }
+    }
+  }
+}
+//@media screen and (max-width: 584px){
+//.process{
+//  .process_image{
+//    height: 532px;
+//  }
+//}
+//}
+//@media screen and (max-width: 562px){
+//  .process{
+//    .process_image{
+//      height: 506px;
+//    }
+//  }
+//}
+//@media screen and (max-width: 542px){
+//  .process{
+//    .process_image{
+//      height: 484px;
+//    }
+//  }
+//}
+//@media screen and (max-width: 542px){
+//  .process{
+//    .process_image{
+//      height: 484px;
+//    }
+//  }
+//}

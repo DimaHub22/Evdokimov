@@ -141,3 +141,134 @@
     }
   }
 }
+@media screen and (max-width: 1210px){
+  .featured_work{
+    flex-direction: column;
+    grid-gap: 50px;
+
+    .featured_work_description {
+      margin: 0 auto;
+      width: 570px;
+      h2 {
+        width: 100%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+    .featured_description{
+      margin: 0 auto;
+      .featured_first {
+        padding-left: 90px;
+        grid-gap: 140px;
+        .ui-desing{
+          &:after {
+            left: -112px;
+            bottom: 5px;
+          }
+        }
+      }
+      .featured_second {
+        padding-left: 90px;
+        grid-gap: 140px;
+        .marketing{
+          &:after {
+            right: -29px;
+            bottom: 8px;
+          }
+        }
+        .content{
+          &:after {
+            top: -43px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 732px){
+  .featured_work{
+    flex-direction: column;
+    grid-gap: 50px;
+
+    .featured_work_description {
+      width: 461px;
+      h2 {
+        width: 321px;
+      }
+      p {
+        width: 370px;
+      }
+    }
+    .featured_description{
+      width: 297px;
+      .featured_first {
+        flex-direction: column;
+        grid-gap: 93px;
+        .ui-desing{
+          &:after {
+            border-left: none;
+          }
+        }
+      }
+      .featured_second {
+        flex-direction: column;
+        grid-gap: 93px;
+        .marketing{
+          &:after {
+            border-left: none;
+            border-top: 1px solid rgb(0, 0, 0);
+            top: -39px;
+            left: -86px;
+            width: 254px;
+          }
+        }
+        .content{
+          &:after {
+            top: -43px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 644px){
+  .featured_work{
+    .featured_work_description {
+      margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 486px){
+  .featured_work{
+    .section_title{
+      h2 {
+        font-size: 33px;
+        line-height: 31px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 434px) {
+  .featured_work{
+    .featured_work_description{
+      p{
+        width: 284px;
+      }
+    }
+    .featured_description{
+      .featured_item{
+        h2 {
+          font-size: 23px;
+        }
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
