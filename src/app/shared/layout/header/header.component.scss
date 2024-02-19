@@ -94,7 +94,7 @@
   height: 40px;
   border-radius: 50%;
   border: 1px solid $color-border;
-
+z-index: 1;
   position: fixed;
   bottom: 40px;
   right: 20px;
@@ -109,6 +109,47 @@
     text-decoration: none;
     .back_svg {
       transform: rotate(-45deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1174px) {
+  .header{
+    .navigation {
+      display: none;
+    }
+    .burger {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .header{
+    .logo-item{
+      .logo {
+        width: 45px;
+        height: 45px;
+      }
+      .logo-title {
+        width: 146px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 570px){
+  .header{
+    .logo-item{
+      .logo {
+        width: 40px;
+        height: 40px;
+      }
+      .logo-title {
+        width: 110px;
+        font-size: 12px;
+      }
     }
   }
 }
