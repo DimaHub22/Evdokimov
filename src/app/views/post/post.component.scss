@@ -29,21 +29,27 @@
     justify-content: space-between;
 
     .brandings {
+      max-width: 470px;
+      overflow: hidden;
+
       .branding_image {
-        max-width: 430px;
-       height: 400px;
+        max-width: 470px;
+        //height: 400px;
         border-radius: 10px;
         overflow: hidden;
+        font-size: 0;
 
         img {
-          height: 100%;
+          width: 100%;
+          //height: 100%;
         }
       }
     }
 
     .news {
       position: relative;
-      .devel{
+
+      .devel {
         padding-bottom: 20px;
         border-bottom: 1px solid black;
       }
@@ -105,10 +111,10 @@
   }
 }
 
-@media screen and (max-width: 1335px){
-  .post{
-    .posts{
-      .news{
+@media screen and (max-width: 1335px) {
+  .post {
+    .posts {
+      .news {
         &:before {
           left: -92px;
         }
@@ -116,10 +122,11 @@
     }
   }
 }
+
 @media screen and (max-width: 1200px) {
-  .post{
-    .posts{
-      .news{
+  .post {
+    .posts {
+      .news {
         &:before {
           left: -68px;
         }
@@ -127,31 +134,44 @@
     }
   }
 }
-@media screen and (max-width: 1171px){
-  .post{
+
+@media screen and (max-width: 1171px) {
+  .post {
     .post_block_title {
       flex-direction: column;
+
       .post_title {
         margin: 0 auto;
-        width: 488px;
+        width: 634px;
+
         h2 {
           width: 100%;
         }
       }
+
       .post_description {
+        max-width: 634px;
         margin: 0 auto;
+
+        p {
+          max-width: 634px;
+        }
       }
     }
-    .posts{
+
+    .posts {
       flex-direction: column;
+
       .brandings {
         margin: 0 auto;
         padding-bottom: 13px;
         border-bottom: 1px solid rgb(0, 0, 0);
       }
+
       .news {
         padding-top: 20px;
         margin: 0 auto;
+
         &:before {
           border: none;
         }
@@ -159,31 +179,45 @@
     }
   }
 }
-@media screen and (max-width: 732px){
-  .post{
-    .post_block_title{
+
+@media screen and (max-width: 732px) {
+  .post {
+    .post_block_title {
       .post_title {
         margin: 0;
         width: 362px;
+
         h2 {
+          font-size: 31px;
           width: 320px;
         }
       }
+
       .post_description {
         margin: 0;
       }
     }
-  }
-}
-@media screen and (max-width: 644px){
-  .post{
-    .posts{
-      .brandings {
-        .branding_image {
-          height: 344px;
+
+    .posts {
+      .branding_text {
+        h2 {
+          font-size: 21px;
         }
       }
-      .news{
+    }
+  }
+}
+
+@media screen and (max-width: 644px) {
+  .post {
+    .posts {
+      .brandings {
+        .branding_image {
+          //height: 344px;
+        }
+      }
+
+      .news {
         .news_images {
           height: 223px;
         }
@@ -191,15 +225,17 @@
     }
   }
 }
-@media screen and (max-width: 527px){
-  .post{
-    .posts{
+
+@media screen and (max-width: 527px) {
+  .post {
+    .posts {
       .brandings {
         .branding_image {
           //height: 344px;
         }
       }
-      .news{
+
+      .news {
         .news_images {
           height: 200px;
         }
@@ -207,23 +243,42 @@
     }
   }
 }
+
 @media screen and (max-width: 504px) {
-  .post{
-    .posts{
+  .post {
+    .posts {
       .brandings {
         .branding_image {
-          height: 295px;
+          //height: 295px;
         }
       }
     }
   }
 }
+
 @media screen and (max-width: 486px) {
   .post {
+    .post_block_title {
+      .post_title {
+
+        h2 {
+          font-size: 23px;
+          line-height: 31px;
+        }
+      }
+    }
+
     .posts {
+
       .brandings {
         .branding_image {
-          height: 260px;
+          //height: 260px;
+        }
+      }
+
+      .branding_text {
+        h2 {
+          font-size: 25px;
         }
       }
 
@@ -241,23 +296,27 @@
     }
   }
 }
-@media screen and (max-width: 428px){
-  .post{
-    .post_block_title{
+
+@media screen and (max-width: 428px) {
+  .post {
+    .post_block_title {
       .post_title {
         h2 {
           width: 282px;
         }
       }
     }
-    .posts{
+
+    .posts {
       .brandings {
         width: 100%;
+
         .branding_image {
-          height: 219px;
+          //height: 219px;
         }
       }
-      .news{
+
+      .news {
         .news_images {
           height: 168px;
         }
@@ -265,20 +324,23 @@
     }
   }
 }
-@media screen and (max-width: 376px){
-  .post{
-    .posts{
+
+@media screen and (max-width: 376px) {
+  .post {
+    .posts {
       .brandings {
         .branding_image {
-          height: 174px;
+          //height: 174px;
         }
       }
-      .news{
+
+      .news {
         .news_images {
           height: 136px;
         }
       }
-      .branding_text{
+
+      .branding_text {
         h2 {
           font-size: 21px;
           line-height: 27px;

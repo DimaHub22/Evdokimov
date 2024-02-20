@@ -107,9 +107,21 @@
     .work_title {
       width: 377px;
       h2 {
+
         width: 320px;
-        font-size: 40px;
+        font-size: 31px;
         line-height: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 486px){
+  .work {
+    .work_title {
+      width: 312px;
+      h2{
+        font-size: 23px;
+        line-height: 31px;
       }
     }
   }
@@ -118,6 +130,10 @@
   .work {
     .work_title {
       width: 312px;
+      h2{
+        font-size: 23px;
+        line-height: 31px;
+      }
     }
     .work_description {
       width: 306px;

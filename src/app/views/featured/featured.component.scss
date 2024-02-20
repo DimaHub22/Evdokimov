@@ -194,6 +194,7 @@
     .featured_work_description {
       width: 461px;
       h2 {
+        font-size: 31px;
         width: 321px;
       }
       p {
@@ -235,6 +236,7 @@
 @media screen and (max-width: 644px){
   .featured_work{
     .featured_work_description {
+      width: 100%;
       margin: 0;
     }
   }
@@ -243,10 +245,12 @@
   .featured_work{
     .section_title{
       h2 {
-        font-size: 33px;
+        width: 100%;
+        font-size: 23px;
         line-height: 31px;
       }
       p {
+        width: 100%;
         font-size: 14px;
       }
     }
@@ -257,13 +261,13 @@
   .featured_work{
     .featured_work_description{
       p{
-        width: 284px;
+        //width: 284px;
       }
     }
     .featured_description{
       .featured_item{
         h2 {
-          font-size: 23px;
+          font-size: 20px;
         }
         p {
           font-size: 13px;
