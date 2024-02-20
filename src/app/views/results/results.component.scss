@@ -175,13 +175,14 @@
 @media screen and (max-width: 732px){
   .portfolio{
     .portfolio_description{
-      width: 386px;
+      width: 100%;
       h2 {
+        font-size: 31px;
         width: 302px;
         margin: 0;
       }
       p {
-        width: 370px;
+        width: 100%;
       }
     }
     .portfolio_items{
@@ -226,8 +227,12 @@
 @media screen and (max-width: 486px){
   .portfolio {
     .portfolio_description{
+      h2{
+        font-size: 23px;
+        line-height: 31px;
+      }
       p {
-        width: 332px;
+        width: 100%;
       }
     }
   }
@@ -257,10 +262,10 @@
   .portfolio {
     .portfolio_description{
       h2 {
-        width: 306px;
+        width:100%;
       }
       p {
-        width: 284px;
+        width: 100%;
       }
     }
   }
