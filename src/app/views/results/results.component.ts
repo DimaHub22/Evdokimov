@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {IsOpenService} from "../../shared/service/is-open.service";
 
 @Component({
   selector: 'app-results',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.scss']
 })
 export class ResultsComponent implements OnInit {
+  @ViewChild('content') content!:ElementRef
 
   panel: string = 'p1'
 
@@ -13,12 +15,23 @@ export class ResultsComponent implements OnInit {
   isNumber:boolean = false
   isCheck:boolean = false
   isPartnery:boolean = false
-  constructor() { }
+  constructor(public serviceOpen:IsOpenService) { }
 
   ngOnInit(): void {
   }
 
   show(p: string) {
     this.panel === p ? this.panel = '' : this.panel = p
+  }
+
+  openModal(){
+    this.isOpen = true
+    this.serviceOpen.addBody()
+    this.serviceOpen.getHeight(this.content)
+
+  }
+  closeModal(){
+    this.isOpen = false
+    this.serviceOpen.removeBody()
   }
 }

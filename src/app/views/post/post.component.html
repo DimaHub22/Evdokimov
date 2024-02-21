@@ -7,7 +7,7 @@
     <div class="post_description">
       <p>Сочи — хорошее место для инвестиций как для
         крупной компании, так и для начинающего коммерсанта.</p>
-      <button class="button_main button" (click)="isOpen=true">К цифрам
+      <button class="button_main button" (click)="openModal()">К цифрам
         <span>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -65,7 +65,7 @@
 
 
 <div class="modal" [class.modal-show]="isOpen">
-  <div class="modal-content" [class.modal-content-show]="isOpen">
+  <div class="modal-content" [class.modal-content-show]="isOpen" #content>
     <h2>Сочи</h2>
     <div>
       <ul>
@@ -82,7 +82,7 @@
     </div>
 
   </div>
-  <div class="close" (click)="isOpen = false">
+  <div class="close" (click)="closeModal()">
     <img src="assets/images/icons/close.svg" alt="">
   </div>
 

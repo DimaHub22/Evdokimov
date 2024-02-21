@@ -1,4 +1,4 @@
-import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {IsOpenService} from "../../shared/service/is-open.service";
 
 @Component({
@@ -6,20 +6,14 @@ import {IsOpenService} from "../../shared/service/is-open.service";
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
-export class MainComponent implements OnInit,AfterViewInit {
+export class MainComponent implements OnInit {
   @ViewChild('content') content!:ElementRef
-  isOpen: boolean = false
 
+
+  isOpen: boolean = false
   constructor(public serviceOpen:IsOpenService) {
 
   }
-ngAfterViewInit() {
-    // if(document.documentElement.clientHeight <= 430){
-    //   this.content.nativeElement.style.height = '300px'
-    //   console.log(this.content.nativeElement)
-    // }
-
-}
 
   ngOnInit(): void {
 
@@ -27,13 +21,17 @@ ngAfterViewInit() {
 
   openModal(){
     this.isOpen = true
-    const height = document.documentElement.clientHeight
-    if(height <= 430){
-      this.content.nativeElement.style.height = '300px'
-    }else{
-      this.content.nativeElement.style.height = '425px'
-    }
+
+   this.serviceOpen.addBody()
+
+    this.serviceOpen.getHeight(this.content)
+
   }
+  closeModal(){
+    this.isOpen = false
+   this.serviceOpen.removeBody()
+  }
+
 
 
 }

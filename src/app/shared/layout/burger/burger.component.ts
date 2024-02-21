@@ -15,7 +15,8 @@ export class BurgerComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  routs() {
+  routs(fragment:string) {
     this.serviceOpen.isOpen = false
+    this.router.navigate(['/'], {fragment: fragment})
   }
 }
