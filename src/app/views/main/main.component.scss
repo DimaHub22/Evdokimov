@@ -166,6 +166,11 @@
       }
     }
   }
+  .modal{
+    .modal-content{
+      margin: 0 15px;
+    }
+  }
 }
 @media screen and (max-width: 584px) {
   .main {

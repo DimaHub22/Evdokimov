@@ -20,6 +20,7 @@ import { ResultsComponent } from './views/results/results.component';
 import { SliderComponent } from './views/slider/slider.component';
 import { SwiperModule } from 'swiper/angular';
 import { PostComponent } from './views/post/post.component';
+import { BurgerComponent } from './shared/layout/burger/burger.component';
 
 
 
@@ -41,7 +42,8 @@ import { PostComponent } from './views/post/post.component';
     ProcessComponent,
     ResultsComponent,
     SliderComponent,
-    PostComponent
+    PostComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,

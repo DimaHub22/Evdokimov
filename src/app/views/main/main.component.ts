@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import {IsOpenService} from "../../shared/service/is-open.service";
 
 @Component({
   selector: 'app-main',
@@ -8,12 +9,13 @@ import { Component, OnInit} from '@angular/core';
 export class MainComponent implements OnInit {
 
   isOpen: boolean = false
-  constructor() {
+  constructor(public serviceOpen:IsOpenService) {
 
   }
 
   ngOnInit(): void {
 
   }
+
 
 }
