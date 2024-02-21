@@ -42,12 +42,13 @@
     </div>
   </div>
 
-  <div class="burger" id="burger">
+  <div class="burger" id="burger" (click)="serviceOpen.isOpen = true">
     <img src="assets/images/icons/burger-menu.svg" alt="menu">
   </div>
-
-
 </header>
+
+<app-burger [class.burger_nav]="serviceOpen.isOpen"></app-burger>
+
 
 <section class="back">
   <a (click)="scrollT()">
@@ -59,4 +60,6 @@
             fill="black"/>
     </svg>
   </a>
+
 </section>
+
