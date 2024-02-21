@@ -6,7 +6,7 @@
     <p>Мотивация сотрудников является одним из самых действенных способов увеличения прибыли. Необходимо
       показать работникам, что их личный доход зависит от рентабельности предприятия. Это подтолкнет их к
       тому, чтобы как можно больше усилий вкладывать в свою работу.</p>
-    <button class="button_main button" (click)="isOpen=true">Узнать больше
+    <button class="button_main button" (click)="openModal()">Узнать больше
       <span>
         <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 7.4307C0 7.06251 0.2736 6.75823 0.628578 6.71007L0.727264 6.70343L15.2725 6.70343C15.6742 6.70343 15.9998 7.02904 15.9998 7.4307C15.9998 7.79888 15.7262 8.10316 15.3712 8.15132L15.2725 8.15796L0.727264 8.15796C0.325607 8.15796 0 7.83235 0 7.4307Z"
@@ -60,7 +60,7 @@
 
 
 <div class="modal" [class.modal-show]="isOpen">
-  <div class="modal-content" [class.modal-content-show]="isOpen">
+  <div class="modal-content" [class.modal-content-show]="isOpen" #content>
     <h2>Наши услуги</h2>
     <div>
       Существует большое количество мотивационных программ для персонала, как материальных, так и не
@@ -83,7 +83,7 @@
     </div>
 
   </div>
-  <div class="close" (click)="isOpen = false">
+  <div class="close" (click)="closeModal()">
     <img src="assets/images/icons/close.svg" alt="">
   </div>
 
