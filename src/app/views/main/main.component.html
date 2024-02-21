@@ -13,7 +13,7 @@
         В Сочи, где сфера обслуживания является одной из наиболее востребованных, существует определенный
         запрос на повышение уровня сервиса.
       </p>
-      <button class="button_main button" (click)="isOpen = true">Узнать больше
+      <button class="button_main button" (click)="openModal()">Узнать больше
         <span>
           <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -39,7 +39,7 @@
 
 
 <div class="modal" [class.modal-show]="isOpen">
-  <div class="modal-content" [class.modal-content-show]="isOpen">
+  <div class="modal-content" [class.modal-content-show]="isOpen" #content>
     <h2>Сочи</h2>
     <div>
       <p>В Сочи с каждым годом возрастает запрос на качественный сервис.</p>
@@ -62,11 +62,11 @@
       </p>
     </div>
 
-    <div class="close" (click)="isOpen = false">
-      <img src="assets/images/icons/close.svg" alt="">
-    </div>
+
 
   </div>
 
-
+  <div class="close" (click)="isOpen = false">
+    <img src="assets/images/icons/close.svg" alt="">
+  </div>
 </div>
