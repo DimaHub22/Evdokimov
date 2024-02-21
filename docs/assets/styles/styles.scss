@@ -18,6 +18,9 @@ body {
   font-weight: 500;
   background: $background-body;
 }
+.modal-body{
+  overflow: hidden;
+}
 app-layout{
   display: flex;
   flex-direction: column;
